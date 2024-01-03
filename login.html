@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!---Coding By CoderGirl | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>payergram</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB/custom -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="custom/main.css" />
+    <link rel="stylesheet" media="screen" href="css/particle.css" />
+    <link rel="stylesheet" href="css/wow/animate.css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <link rel="stylesheet" href="css/exchange.css" />
+  </head>
+  <body>
+    
+    <nav
+      class="navbar navbar-expand-lg sticky-top mdb-shadow-2"
+      style="background: linear-gradient(to right, #000000, #04628d)"
+    >
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a
+          class="text-white fs-1 logo-head text-decoration-none"
+          href="index.html"
+          ><img src="assets/img/logo.png" alt="logo"
+        /></a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars fa-2x text-white"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left links -->
+          <ul class="navbar-nav ms-auto mb-2 me-5 mb-lg-0">
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="gift-card.html"
+                >gift-Card</a
+              >
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="about.html"
+                >About-Us</a
+              >
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="faq.html">Faq</a>
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="contact.html"
+                >Contact-us</a
+              >
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+        <!-- light and dark elements -->
+        <div class="d-flex align-items-center">
+          <img src="assets/img/moon.png" alt="" style="width: 30px" id="icon" />
+        </div>
+        <!-- light and dark elements -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    
+    <div class="login-hold mt-5" style="padding-top: 50px">
+    
+      <input type="checkbox" id="check" />
+      <div class="login form">
+        <header>Login</header>
+        <form action="#">
+          <input type="text" placeholder="Enter your email" />
+          <input type="password" placeholder="Enter your password" />
+          <a href="#">Forgot password?</a>
+          <input type="button" class="button" value="Login" />
+        </form>
+        <div class="signup">
+          <span class="signup"
+            >Don't have an account?
+            <label for="check">Signup</label>
+          </span>
+        </div>
+      </div>
+      <div class="registration form">
+        <header>Signup</header>
+        <form action="#">
+          <input type="text" placeholder="Enter your email" />
+          <input type="password" placeholder="Create a password" />
+          <input type="password" placeholder="Confirm your password" />
+          <input type="button" class="button" value="Signup" />
+        </form>
+        <div class="signup">
+          <span class="signup"
+            >Already have an account?
+            <label for="check">Login</label>
+          </span>
+        </div>
+      </div>
+    </div>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      /* body{
+  min-height: 100vh;
+  width: 100%;
+  background: #87cefa;
+} */
+      .login-hold {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* max-width: 430px; */
+        width: 100%;
+        /* background: #fff; */
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        height: 100vh;
+      }
+      .login-hold .registration {
+        display: none;
+      }
+      #check:checked ~ .registration {
+        display: block;
+      }
+      #check:checked ~ .login {
+        display: none;
+      }
+      #check {
+        display: none;
+      }
+      .login-hold .form {
+        padding: 2rem;
+      }
+      .form header {
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+      .form input {
+        height: 60px;
+        width: 100%;
+        padding: 0 15px;
+        font-size: 17px;
+        margin-bottom: 1.3rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        outline: none;
+      }
+      .form input:focus {
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+      }
+      .form a {
+        font-size: 16px;
+        color: #87cefa;
+        text-decoration: none;
+      }
+      .form a:hover {
+        text-decoration: underline;
+      }
+      .form input.button {
+        color: #fff;
+        background: #87cefa;
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-top: 1.7rem;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      .form input.button:hover {
+        background: #0155a3;
+      }
+      .signup {
+        font-size: 17px;
+        text-align: center;
+      }
+      .signup label {
+        color: #87cefa;
+        cursor: pointer;
+      }
+      .signup label:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/lib/stats.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/popper.js"></script>
+
+    <script src="js/wow.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="exchange.js"></script>
+
+    <script src="countries.js"></script>
+
+    <!-- loader script -->
+    <script src="assets/vendor/loader plugin/plugins.js"></script>
+  </body>
+</html>

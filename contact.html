@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>payergram</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB/custom -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="custom/main.css" />
+    <link rel="stylesheet" media="screen" href="css/particle.css" />
+    <link rel="stylesheet" href="css/wow/animate.css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <link rel="stylesheet" href="css/exchange.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <!-- Start your project here-->
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top mdb-shadow-2"
+      style="background: linear-gradient(to right, #000000, #04628de7)"
+    >
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a
+          class="text-white fs-1 logo-head text-decoration-none"
+          href="index.html"
+          ><img src="assets/img/logo.png" alt="logo"
+        /></a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars fa-2x text-white"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left links -->
+          <ul class="navbar-nav ms-auto mb-2 me-5 mb-lg-0">
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="gift-card.html"
+                >gift-Card</a
+              >
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="about.html"
+                >About-Us</a
+              >
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="faq.html">Faq</a>
+            </li>
+            <li class="nav-item custom-link">
+              <a class="nav-link me-4 custom-link" href="contact.html"
+                >Contact-us</a
+              >
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+        <!-- light and dark elements -->
+        <div class="d-flex align-items-center">
+          <img src="assets/img/moon.png" alt="" style="width: 30px" id="icon" />
+        </div>
+        <!-- light and dark elements -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <!-- ***** Main Banner Area Start ***** -->
+    <section class="contact-page-heading">
+      <div class="container">
+        <div
+          class="row align-self-center d-flex justify-content-center align-items-center"
+        >
+          <div class="col-lg-12">
+            <div class="header-text">
+              <h1 class="text-center">Contact-Us</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ...................................contact..................................................... -->
+    <section class="contact-section section-padding">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-12 col-12">
+          
+            <h2 class="text-white mb-4 pb-lg-2">Contact</h2>
+            <p class="text-primary">Any Question or remarks.just write us a message!</p>
+          </div>
+          <div class="col-lg-6 col-12 mx-auto  d-flex align-self-center justify-content-center mt-lg-0 ps-lg-5">
+            <img src="assets/img/Contact-Image.webp" alt="" class="w-50" loading="lazy" />
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <form
+              action="#"
+              method="post"
+              class="custom-form contact-form"
+              role="form"
+            >
+              <div class="row">
+                <div class="col-lg-6 col-12">
+                  <label for="name" class="form-label"
+                    >Name <sup class="text-danger">*</sup></label
+                  >
+
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Jackson"
+                    required=""
+                  />
+                </div>
+
+                <div class="col-lg-6 col-12">
+                  <label for="email" class="form-label">Email Address</label>
+
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    pattern="[^ @]*@[^ @]*"
+                    class="form-control"
+                    placeholder="Jack@gmail.com"
+                    required=""
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label"
+                    >How can we help?</label
+                  >
+
+                  <textarea
+                    name="message"
+                    rows="4"
+                    class="form-control"
+                    id="message"
+                    placeholder="Message"
+                    required=""
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="col-lg-5 col-12 mx-auto mt-3">
+                <button type="submit" class="form-control">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Subscribe Area Starts ***** -->
+    <div class="subscribe">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="section-heading">
+              <h2>
+                Subscribing To Our Newsletter to Get The Latest Tips, Updates
+                and Promo
+              </h2>
+            </div>
+            <form id="subscribe" action="" method="get">
+              <div
+                class="row g-4 align-self-center d-flex justify-content-center align-items-center"
+              >
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input
+                      name="name"
+                      type="text"
+                      id="name"
+                      placeholder="Your Name"
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input
+                      name="email"
+                      type="text"
+                      id="email"
+                      pattern="[^ @]*@[^ @]*"
+                      placeholder="Your Email Address"
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-5 justify-content-center">
+                  <fieldset>
+                    <button
+                      type="submit"
+                      id="form-submit"
+                      class="main-dark-button mt-4 mb-3"
+                    >
+                      subscribe
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li>
+                    Store Location:<br /><span
+                      >Sunny Isles Beach, FL 33160, United States</span
+                    >
+                  </li>
+                  <li>Phone:<br /><span>+44 7440655374</span></li>
+                  <li>Office Location:<br /><span>North Miami Beach</span></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li>
+                    Work Hours:<br /><span>07:30 AM - 9:30 PM Daily</span>
+                  </li>
+                  <li>Email:<br /><span>payergram@gmail.com</span></li>
+                  <li>
+                    Social Media:<br /><span
+                      ><a href="#">Facebook</a>, <a href="#">Instagram</a>,
+                      <a href="#">Behance</a>, <a href="#">Linkedin</a></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Subscribe Area Ends ***** -->
+   <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4  d-flex align-self-center">
+            <div class="first-item">
+              <div class="logo">
+                <img src="assets/img/logo.png" alt="logo" class="w-100" />
+              </div>
+              <ul>
+                <li>
+                  <a href="#"
+                    >16501 Collins Ave, Sunny Isles Beach, FL 33160, United
+                    States</a
+                  >
+                </li>
+                <li><a href="#">payergram@gmail.com</a></li>
+                <li><a href="#">+44 7440655374</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4   align-self-center">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="gift-card.html">gift-card</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="faq.html">Help</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 d-flex align-self-center">
+           <div>
+             <p class="text-white">
+              payergram is a trusted platform for exchange of digital currency
+              and gift cards at great price,we focus on providing our customers
+              with an impeccable customer experience and good rates
+            </p>
+           </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="under-footer">
+              <p>Copyright © 2024 payergram Co., Ltd. All Rights Reserved.</p>
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/lib/stats.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/popper.js"></script>
+
+    <script src="js/wow.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="exchange.js"></script>
+
+    <script src="countries.js"></script>
+
+    <!-- loader script -->
+    <script src="assets/vendor/loader plugin/plugins.js"></script>
+    <script>
+      // .................dark and light .........................
+      var icon = document.getElementById('icon');
+      icon.onclick = function () {
+        document.body.classList.toggle('dark-theme');
+        if (document.body.classList.contains('dark-theme')) {
+          icon.src = 'assets/img/sun.png';
+        } else {
+          icon.src = 'assets/img/moon.png';
+        }
+      };
+
+      // .................owl carosel.........................
+      $(document).ready(function () {
+        $('.owl-carousel').owlCarousel();
+      });
+      //..............loader..........................
+      $(window).on('load', function () {
+        $('body').addClass('loaded');
+      });
+      wow = new WOW({
+        animateClass: 'animated',
+        offset: 100,
+        callback: function (box) {
+          console.log('WOW: animating <' + box.tagName.toLowerCase() + '>');
+        },
+      });
+      wow.init();
+      document.getElementById('moar').onclick = function () {
+        var section = document.createElement('section');
+        section.className = 'section--purple wow fadeInDown';
+        this.parentNode.insertBefore(section, this);
+      };
+    </script>
+  </body>
+</html>
